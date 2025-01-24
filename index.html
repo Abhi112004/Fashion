@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assats/css/style.css" />
   </head>
   <style></style>
-  <body>
+  <body onload="lode()">
     <!-- start header section-->
     <div class="header">
       <!-- start header-top section-->
@@ -873,18 +873,18 @@
             </div>
           </div>
         </div>
-             <!-- footer top media 767px -->
-             <div class="footer-top-media">
-              <div class="container">
-                  <ul class="footer-inner-media">
-                      <li><a href="#">store information</a></li>
-                      <li><a href="#">products</a></li>
-                      <li><a href="#">our company</a></li>
-                      <li><a href="#">subscribe</a></li>
-                  </ul>
-              </div>
+        <!-- footer top media 767px -->
+        <div class="footer-top-media">
+          <div class="container">
+            <ul class="footer-inner-media">
+              <li><a href="#">store information</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">our company</a></li>
+              <li><a href="#">subscribe</a></li>
+            </ul>
           </div>
-          <!-- footer top media 767px -->
+        </div>
+        <!-- footer top media 767px -->
         <div class="footer-middel">
           <div class="middel-inner">
             <div class="logo">
@@ -921,5 +921,24 @@
       </div>
     </div>
     <!-- end footer section-->
+    <div class="pop-outer">
+      <div class="pop-inner" id="popOuter">
+        <h2>Newsletter</h2>
+        <p>
+          Subscribe to our newsletter to get exclusive discounts and new theme
+          update right in your
+        </p>
+        <p>inbox</p>
+        <input type="email" class="email" placeholder="your email address" />
+        <a href="#" class="sub">subscribe</a>
+        <input type="checkbox" class="checkbox" /><span
+          >Don’t show this popup again
+        </span>
+        <button href="" class="icon" onclick="pop()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <script src="assats/js/pop.js"></script>
   </body>
 </html>
