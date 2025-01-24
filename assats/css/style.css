@@ -1312,10 +1312,10 @@ a {
   color: #c72028;
 }
 /* start footer top media 767px  */
-.pop-ouer {
+.pop-outer {
   width: auto;
   height: auto;
-  display: none;
+  display: block;
 }
 .pop-inner {
   display: none;
