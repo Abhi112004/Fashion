@@ -47,8 +47,8 @@
                   </div>
                 </div>
               </span>
-              <span class="span2" id="usd"
-                ><a href="#">USD $ </a>
+              <span class="span2" id="usd">
+                <a href="#">USD $ </a>
                 <div class="usd-outer">
                   <div class="usd-inner">
                     <div class="usd">EUR €</div>
@@ -195,6 +195,123 @@
       <!-- end header buttom section-->
     </div>
     <!-- end header section-->
+    <!-- new header -->
+    <div class="newheader-outer">
+      <div class="container">
+        <div class="newheader-inner">
+          <div class="item-newheader">
+            <i class="fa-solid fa-bars" id="hide-header"></i>
+            <img src="assats/image/etrend-logo.png" alt="" />
+          </div>
+          <div class="item-newheader">
+            <div class="item-inner">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <i class="fa-solid fa-user-plus"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="small-header" id="small-header">
+      <div class="container">
+        <ul class="small-inner">
+          <li><a href="#">home</a></li>
+          <li>
+            <a href="#" demo="#ssin1" class="btn-icon2">shop </a>
+            <ul class="small-sub-item" id="ssin1">
+              <li>
+                <a href="#" demo="#ssii1" class="btn-icon2">fashion</a>
+                <ul class="small-sub-item-inner" id="ssii1">
+                  <li><a href="#">men</a></li>
+                  <li><a href="#">women</a></li>
+                  <li><a href="#">kids</a></li>
+                  <li><a href="#">accrssories</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" demo="#ssii2" class="btn-icon2">jewellery</a>
+                <ul class="small-sub-item-inner" id="ssii2">
+                  <li><a href="#">Rings</a></li>
+                  <li><a href="#">Bracelets</a></li>
+                  <li><a href="#">Necklaces</a></li>
+                  <li><a href="#">Wedding Bands</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" demo="#ssii3" class="btn-icon2">furniture</a>
+                <ul class="small-sub-item-inner" id="ssii3">
+                  <li><a href="#">Living Room</a></li>
+                  <li><a href="#">Kitchen</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Home Decor</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" demo="#ssii4" class="btn-icon2">autoparts</a>
+                <ul class="small-sub-item-inner" id="ssii4">
+                  <li><a href="#">Home Decor </a></li>
+                  <li><a href="#">Exhaust Parts</a></li>
+                  <li><a href="#">Brake Parts</a></li>
+                  <li><a href="#">Body Parts</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" demo="#ssin2" class="btn-icon2">Electronics </a>
+            <ul class="small-sub-item" id="ssin2">
+              <li>
+                <a href="#" demo="#ssii5" class="btn-icon2">mobiles</a>
+                <ul class="small-sub-item-inner" id="ssii5">
+                  <li><a href="#">apple </a></li>
+                  <li><a href="#">black berry</a></li>
+                  <li><a href="#">oneplus</a></li>
+                  <li><a href="#">sony</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" demo="#ssii6" class="btn-icon2">cameras</a>
+                <ul class="small-sub-item-inner" id="ssii6">
+                  <li><a href="#">DSLR </a></li>
+                  <li><a href="#">lences</a></li>
+                  <li><a href="#">tripods</a></li>
+                  <li><a href="#">batteries</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" demo="#ssin3" class="btn-icon2">sports & books </a>
+            <ul class="small-sub-item" id="ssin3">
+              <li><a href="#">sports</a></li>
+              <li><a href="#">books</a></li>
+            </ul>
+          </li>
+          <li><a href="#">sale</a></li>
+          <li><a href="#">contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#hide-header").click(function () {
+          $("#small-header").slideToggle();
+        });
+        $("a").click(function () {
+          var di = $(this).attr("demo");
+          $(di).slideToggle();
+        });
+        // $(".small-sub-item-inner>li").click(function () {
+        //   var di1 = $(this).attr("demo1");
+        //   $(di1).slideToggle();
+        // });
+      });
+    </script>
+    <!-- new header -->
+
     <!-- start body section-->
     <div class="body-section">
       <!-- start slider section-->
@@ -749,7 +866,7 @@
             <h2>New <i>Products</i></h2>
           </div>
           <div class="products-inner owl-carousel owl-theme">
-            <div class="products-item">
+            <div class="products-item item">
               <div class="products-item-inner">
                 <div class="products-img">
                   <img
