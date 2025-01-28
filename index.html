@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assats/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assats/css/owl.theme.default.min.css" />
+    <script src="assats/js/jquery-3.7.1.min.js"></script>
+    <script src="assats/js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="assats/css/style.css" />
   </head>
   <style></style>
@@ -30,8 +34,28 @@
         <div class="container">
           <div class="top-inner">
             <div class="item">
-              <span class="span1"><a href="#">English</a></span>
-              <span class="span2"><a href="#">USD $ </a></span>
+              <span class="span1" id="flg"
+                ><a href="#">English</a>
+                <div class="flg-outer">
+                  <div class="flg-inner">
+                    <div class="flg1">
+                      <img src="assats/image/1 (1).jpg" alt="" />
+                    </div>
+                    <div class="flg1">
+                      <img src="assats/image/2 (1).jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="span2" id="usd"
+                ><a href="#">USD $ </a>
+                <div class="usd-outer">
+                  <div class="usd-inner">
+                    <div class="usd">EUR €</div>
+                    <div class="usd">USD $</div>
+                  </div>
+                </div></span
+              >
             </div>
             <div class="item">
               <span class="span3"><a href="#">Sign in</a> </span>
@@ -40,6 +64,16 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          $("#flg").click(function () {
+            $(".flg-outer").slideToggle();
+          });
+          $("#usd").click(function () {
+            $(".usd-outer").slideToggle();
+          });
+        });
+      </script>
       <!-- end eader-top section-->
       <!-- start eader-middle section-->
       <div class="header-middel">
@@ -164,14 +198,61 @@
     <!-- start body section-->
     <div class="body-section">
       <!-- start slider section-->
-      <div class="slider-outer">
-        <div class="slider-inner">
+      <div class="slider-outer owl-carousel owl-theme">
+        <div class="slider-inner item">
+          <img
+            src="assats/image/sample-2.jpg"
+            alt="sampleC:\Users\Abhi Gajera\OneDrive\Desktop\skywinitacademy\New folder\index.html"
+          />
+          <div class="container">
+            <div class="text text2">
+              <h2>
+                Up to
+                <span>40%</span>
+                <br />
+                <strong>DISCOUNT</strong>
+                <br />
+                on Fashion
+                <br />
+                Brands
+              </h2>
+              <p>
+                <a class="primary-btn" href="#">Shop Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-inner item">
+          <img
+            src="assats/image/sample-3.jpg"
+            alt="sampleC:\Users\Abhi Gajera\OneDrive\Desktop\skywinitacademy\New folder\index.html"
+          />
+          <div class="container">
+            <div class="text text2">
+              <h2>
+                Up to
+                <span>40%</span>
+                <br />
+                <strong>DISCOUNT</strong>
+                <br />
+                on Fashion
+                <br />
+                Brands
+              </h2>
+              <p>
+                <a class="primary-btn" href="#">Shop Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-inner item">
           <img
             src="assats/image/sample.jpg"
             alt="sampleC:\Users\Abhi Gajera\OneDrive\Desktop\skywinitacademy\New folder\index.html"
           />
-          <div class="text">
-            <div class="container">
+          <div class="container">
+            <div class="text">
               <h2>
                 Up to
                 <span>40%</span>
@@ -189,6 +270,27 @@
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      </script>
       <!-- end slider section-->
       <!-- start service section-->
       <div class="service-outer">
@@ -244,8 +346,8 @@
           <div class="title">
             <h2>shop by category</h2>
           </div>
-          <div class="shop-item-row">
-            <div class="item-row">
+          <div class="shop-item-row owl-carousel owl-theme">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb1.png" alt="thumb1" />
@@ -256,7 +358,7 @@
                 </div>
               </div>
             </div>
-            <div class="item-row">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb2.png" alt="thumb2" />
@@ -267,7 +369,7 @@
                 </div>
               </div>
             </div>
-            <div class="item-row">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb3.jpg" alt="thumb3" />
@@ -278,7 +380,7 @@
                 </div>
               </div>
             </div>
-            <div class="item-row">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb4.jpg" alt="thumb4" />
@@ -289,7 +391,7 @@
                 </div>
               </div>
             </div>
-            <div class="item-row">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb5.jpg" alt="thumb5" />
@@ -300,7 +402,7 @@
                 </div>
               </div>
             </div>
-            <div class="item-row">
+            <div class="item-row item">
               <div class="item-row-inner">
                 <div class="shop-img">
                   <img src="assats/image/thumb6.jpg" alt="thumb6" />
@@ -311,9 +413,45 @@
                 </div>
               </div>
             </div>
+            <div class="item-row item">
+              <div class="item-row-inner">
+                <div class="shop-img">
+                  <img src="assats/image/thumb4.jpg" alt="thumb6" />
+                </div>
+                <div class="shop-text">JewelleryNEW</div>
+                <div class="shop-hove">
+                  <a href="#"><span>View More</span> </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+
+            767: {
+              items: 3,
+            },
+            991: {
+              items: 4,
+            },
+            1200: {
+              items: 6,
+            },
+          },
+        });
+      </script>
       <!-- end Shop  section-->
       <!-- start ads section-->
       <div class="ads-outer">
@@ -605,15 +743,15 @@
       </div>
       <!-- end Summer Lookbook  section-->
       <!-- start new products  section-->
-      <div class="featured-outer">
+      <div class="products-outer">
         <div class="container">
           <div class="title">
             <h2>New <i>Products</i></h2>
           </div>
-          <div class="featured-inner">
-            <div class="featured-item">
-              <div class="featured-item-inner">
-                <div class="featured-img">
+          <div class="products-inner owl-carousel owl-theme">
+            <div class="products-item">
+              <div class="products-item-inner">
+                <div class="products-img">
                   <img
                     src="assats/image/accusantium-dolore2.jpg"
                     alt="accusantium-dolore"
@@ -621,7 +759,7 @@
                   <div class="hover-img">
                     <img src="assats/image/accusantium-dolore3.jpg" alt="" />
                   </div>
-                  <div class="featured-text1">
+                  <div class="products-text1">
                     <a href="#">Quick view</a>
                   </div>
                 </div>
@@ -631,16 +769,97 @@
                 <div class="sale-text">
                   <p>-12%</p>
                 </div>
-                <div class="featured-text">
+                <div class="products-text">
                   <h3>Women's Slim Fit Shorts</h3>
                   <span>$333.52 <s>$379.00</s></span>
                   <a class="primary-btn" href="#">Add to cart</a>
                 </div>
               </div>
             </div>
-            <div class="featured-item">
-              <div class="featured-item-inner">
-                <div class="featured-img">
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
+                  <img
+                    src="assats/image/accusantium-dolore3.jpg"
+                    alt="accusantium-dolore"
+                  />
+                  <div class="hover-img">
+                    <img src="assats/image/accusantium-dolore4.jpg" alt="" />
+                  </div>
+                  <div class="products-text1">
+                    <a href="#">Quick view</a>
+                  </div>
+                </div>
+                <div class="new-text">
+                  <p>new</p>
+                </div>
+                <div class="sale-text">
+                  <p>-12%</p>
+                </div>
+                <div class="products-text">
+                  <h3>Women's Slim Fit Shorts</h3>
+                  <span>$333.52 <s>$379.00</s></span>
+                  <a class="primary-btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
+                  <img
+                    src="assats/image/accusantium-dolore5.jpg"
+                    alt="accusantium-dolore"
+                  />
+                  <div class="hover-img">
+                    <img src="assats/image/accusantium-dolore4.jpg" alt="" />
+                  </div>
+                  <div class="products-text1">
+                    <a href="#">Quick view</a>
+                  </div>
+                </div>
+                <div class="new-text">
+                  <p>new</p>
+                </div>
+                <div class="sale-text">
+                  <p>-12%</p>
+                </div>
+                <div class="products-text">
+                  <h3>Women's Slim Fit Shorts</h3>
+                  <span>$333.52 <s>$379.00</s></span>
+                  <a class="primary-btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
+                  <img
+                    src="assats/image/accusantium-dolore6.jpg"
+                    alt="accusantium-dolore"
+                  />
+                  <div class="hover-img">
+                    <img src="assats/image/accusantium-dolore8.jpg" alt="" />
+                  </div>
+                  <div class="products-text1">
+                    <a href="#">Quick view</a>
+                  </div>
+                </div>
+                <div class="new-text">
+                  <p>new</p>
+                </div>
+                <div class="sale-text">
+                  <p>-12%</p>
+                </div>
+                <div class="products-text">
+                  <h3>Women's Slim Fit Shorts</h3>
+                  <span>$333.52 <s>$379.00</s></span>
+                  <a class="primary-btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
                   <img
                     src="assats/image/accusantium-dolore3.jpg"
                     alt="accusantium-dolore"
@@ -648,7 +867,7 @@
                   <div class="hover-img">
                     <img src="assats/image/accusantium-dolore6.jpg" alt="" />
                   </div>
-                  <div class="featured-text1">
+                  <div class="products-text1">
                     <a href="#">Quick view</a>
                   </div>
                 </div>
@@ -658,16 +877,16 @@
                 <div class="sale-text">
                   <p>-20%</p>
                 </div>
-                <div class="featured-text">
+                <div class="products-text">
                   <h3>Women's Dark Blue Shorts</h3>
                   <span>$311.20 <s>$389.00</s></span>
                   <a class="primary-btn" href="#">Add to cart</a>
                 </div>
               </div>
             </div>
-            <div class="featured-item">
-              <div class="featured-item-inner">
-                <div class="featured-img">
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
                   <img
                     src="assats/image/accusantium-dolore6.jpg"
                     alt="accusantium-dolore"
@@ -675,7 +894,7 @@
                   <div class="hover-img">
                     <img src="assats/image/accusantium-dolore8.jpg" alt="" />
                   </div>
-                  <div class="featured-text1">
+                  <div class="products-text1">
                     <a href="#">Quick view</a>
                   </div>
                 </div>
@@ -685,16 +904,16 @@
                 <div class="sale-text">
                   <p>-10%</p>
                 </div>
-                <div class="featured-text">
+                <div class="products-text">
                   <h3>Women's Regular fit TOP</h3>
                   <span>$359.10 <s>$399.00</s></span>
                   <a class="primary-btn" href="#">Add to cart</a>
                 </div>
               </div>
             </div>
-            <div class="featured-item">
-              <div class="featured-item-inner">
-                <div class="featured-img">
+            <div class="products-item item">
+              <div class="products-item-inner">
+                <div class="products-img">
                   <img
                     src="assats/image/accusantium-dolore7.jpg"
                     alt="accusantium-dolore"
@@ -702,7 +921,7 @@
                   <div class="hover-img">
                     <img src="assats/image/accusantium-dolore.jpg" alt="" />
                   </div>
-                  <div class="featured-text1">
+                  <div class="products-text1">
                     <a href="#">Quick view</a>
                   </div>
                 </div>
@@ -712,7 +931,7 @@
                 <div class="sale-text">
                   <p>-35%</p>
                 </div>
-                <div class="featured-text">
+                <div class="products-text">
                   <h3>Women's Crop TOP</h3>
                   <span>$226.85 <s>$349.00</s></span>
                   <a class="primary-btn" href="#">Add to cart</a>
@@ -722,11 +941,35 @@
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            479: {
+              items: 2,
+            },
+            767: {
+              items: 3,
+            },
+            991: {
+              items: 4,
+            },
+          },
+        });
+      </script>
       <!-- end new products  section-->
       <!-- start Customer  section-->
       <div class="customer-outer">
-        <div class="container">
-          <div class="customer-inner">
+        <div class="owl-carousel owl-theme container">
+          <div class="customer-inner item">
             <div class="customer-photo">
               <img src="assats/image/testimonial1.png" alt="testimonial1" />
               <strong>John doe</strong>
@@ -743,8 +986,45 @@
               </div>
             </div>
           </div>
+          <div class="customer-inner item">
+            <div class="customer-photo">
+              <img src="assats/image/testimonial1.png" alt="testimonial1" />
+              <strong>Mark doe</strong>
+              <p>Customer</p>
+            </div>
+            <div class="customer-text-inner">
+              <div class="customer-text">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      </script>
       <!-- end Customer  section-->
       <!-- start brand  section-->
       <div class="brand-outer">
@@ -752,35 +1032,69 @@
           <div class="title">
             <h2>shop by <i>brand </i></h2>
           </div>
-          <div class="brand-inner">
-            <div class="brand-item">
+          <div class="brand-inner owl-carousel owl-theme">
+            <div class="brand-item item">
               <div class="brand-item-inner">
                 <img src="assats/image/1.jpg" alt="1" />
               </div>
             </div>
-            <div class="brand-item">
+            <div class="brand-item item">
               <div class="brand-item-inner">
                 <img src="assats/image/2.jpg" alt="2" />
               </div>
             </div>
-            <div class="brand-item">
+            <div class="brand-item item">
               <div class="brand-item-inner">
                 <img src="assats/image/3.jpg" alt="3" />
               </div>
             </div>
-            <div class="brand-item">
+            <div class="brand-item item">
               <div class="brand-item-inner">
                 <img src="assats/image/4.jpg" alt="4" />
               </div>
             </div>
-            <div class="brand-item">
+            <div class="brand-item item">
               <div class="brand-item-inner">
                 <img src="assats/image/5.jpg" alt="5" />
+              </div>
+            </div>
+            <div class="brand-item item">
+              <div class="brand-item-inner">
+                <img src="assats/image/2.jpg" alt="2" />
+              </div>
+            </div>
+            <div class="brand-item item">
+              <div class="brand-item-inner">
+                <img src="assats/image/3.jpg" alt="3" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            479: {
+              items: 3,
+            },
+            767: {
+              items: 4,
+            },
+            991: {
+              items: 5,
+            },
+          },
+        });
+      </script>
       <!-- end brand  section-->
       <!-- start from  section-->
       <div class="from-outer">
@@ -921,8 +1235,8 @@
       </div>
     </div>
     <!-- end footer section-->
-    <div class="pop-outer">
-      <div class="pop-inner"id="popOuter" >
+    <div class="pop-outer" id="popOuter" onclick="pop()">
+      <div class="pop-inner">
         <h2>Newsletter</h2>
         <p>
           Subscribe to our newsletter to get exclusive discounts and new theme
