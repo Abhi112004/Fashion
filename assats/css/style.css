@@ -2044,13 +2044,45 @@ a {
     margin-right: 0;
   }
   .footer-top {
+    display: block;
+  }
+  .footer-top .top-inner {
+    display: block;
+
+  }
+  .footer-top .top-inner .top-item {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .footer-top .top-inner .top-item .top-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .footer-top .top-inner .top-item .top-title::after {
+    content: "\f107";
+    font-family: "Font Awesome 6 free";
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 5px;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+  .footer-top .top-inner ul{
     display: none;
   }
+
   .footer-top-media .container {
     max-width: 620px;
   }
   .footer-top-media {
-    display: block;
+    display: none;
   }
   /*  */
   .pop-inner {

@@ -1249,8 +1249,8 @@
         <div class="footer-top">
           <div class="top-inner">
             <div class="top-item">
-              <div class="top-title">Contact</div>
-              <ul class="top-l">
+              <div class="top-title" demo2="#top-t" id="tt">Contact</div>
+              <ul class="top-l" id="top-t">
                 <li>
                   <span class="location">Address</span>
 
@@ -1271,8 +1271,8 @@
               </ul>
             </div>
             <div class="top-item">
-              <div class="top-title">Products</div>
-              <ul>
+              <div class="top-title" id="tt" demo2="#top-t1">Products</div>
+              <ul id="top-t1">
                 <li><a href=""> Secure payment </a></li>
                 <li><a href=""> Prices drop </a></li>
 
@@ -1282,8 +1282,8 @@
               </ul>
             </div>
             <div class="top-item">
-              <div class="top-title">Our company</div>
-              <ul>
+              <div class="top-title" id="tt" demo2="#top-t2">Our company</div>
+              <ul id="top-t2">
                 <li>
                   <a href="">Delivery</a>
                 </li>
@@ -1294,8 +1294,8 @@
             </div>
 
             <div class="top-item">
-              <div class="top-title">your Account</div>
-              <ul>
+              <div class="top-title" id="tt" demo2="#top-t3">your Account</div>
+              <ul id="top-t3">
                 <li><a href=""> Personal info </a></li>
                 <li><a href=""> Orders </a></li>
                 <li><a href=""> Credit slips </a></li>
@@ -1304,6 +1304,14 @@
             </div>
           </div>
         </div>
+        <script>
+          $(document).ready(function () {
+            $(".top-title").click(function () {
+              var ul = $(this).attr("demo2");
+              $(ul).slideToggle();
+            });
+          });
+        </script>
         <!-- footer top media 767px -->
         <div class="footer-top-media">
           <div class="container">
