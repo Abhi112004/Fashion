@@ -27,6 +27,23 @@
   </head>
   <style></style>
   <body onload="lode()">
+    <!--  -->
+    <div class="top-line" id="top-line">
+      <p class="top-p">
+        BUY ONE - GET ONE FREE FLASH SALE! <a href="#" class="sn">Shop Now!</a>
+      </p>
+      <button class="x-btn" id="x-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#x-btn").click(function () {
+          $("#top-line").hide();
+        });
+      });
+    </script>
+    <!--  -->
     <!-- start header section-->
     <div class="header">
       <!-- start header-top section-->

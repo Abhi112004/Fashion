@@ -5,6 +5,49 @@
   /* font-family: "Open Sans", system-ui; */
   font-family: "Jost", sans-serif;
 }
+
+
+
+
+/* top -line */
+.top-line{
+  display: flex;
+  background-color: #051829;
+  color: white;
+  padding: 8px 0;
+  text-align: center;
+}
+.top-line .top-p{
+  display: block;
+  width: 98%;
+}
+
+.top-line .x-btn{
+  display: block;
+  width: 2%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.top-line .top-p .sn{
+  display: inline-block;
+  background-color: white;
+  border: 2px solid white;
+  color: #000;
+  border-radius:5px ;
+  padding: 1px 3px;
+  margin: 0 15px;
+
+}
+.top-line .top-p .sn:hover{
+  color: white;
+  background-color: #000;
+}
+
+/* top line */
+
 /* start header section */
 .header {
   display: block;
@@ -260,6 +303,7 @@ li {
   clear: both;
   margin-top: 35px;
   background-color: black;
+
 }
 .header-buttom-outer .buttom-inner {
   display: flex;
